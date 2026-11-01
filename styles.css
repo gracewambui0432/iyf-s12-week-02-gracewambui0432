@@ -203,3 +203,98 @@ p {
     margin-bottom: 15px;
 }
 
+
+/* TASK 3.4: COLOR SCHEME */
+
+:root {
+    /* Main colors */
+    --color-primary: #1E3A8A;
+    --color-secondary: #FACC15;
+    --color-background: #F8FAFC;
+    --color-text: #1F2937;
+    --color-muted: #9CA3AF;
+
+    /* Primary color variations */
+    --color-primary-light: #DBEAFE;
+    --color-primary-dark: #172554;
+}
+
+/* Body colors */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Heading colors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-primary);
+}
+
+/* Paragraph colors */
+p {
+    color: var(--color-text);
+}
+
+/* Link colors */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: var(--color-secondary);
+}
+
+/* Button colors */
+button {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* Section backgrounds */
+section {
+    background-color: var(--color-background);
+}
+
+/* Muted text */
+small,
+.small-text {
+    color: var(--color-muted);
+}
+
+/* Card backgrounds */
+.card {
+    background-color: white;
+    border: 1px solid var(--color-muted);
+}
+
+/* Highlight backgrounds */
+.highlight {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+
