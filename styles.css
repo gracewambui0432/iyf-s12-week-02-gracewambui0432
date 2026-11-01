@@ -1353,3 +1353,9 @@ body {
     color: #ffffff;
     font-size: 1.1rem;
 }
+
+.nav-links a {
+    color: red !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
