@@ -1359,3 +1359,13 @@ body {
     font-size: 20px !important;
     font-weight: bold !important;
 }
+
+.nav-links li a {
+    display: inline-block;
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    padding: 10px;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
