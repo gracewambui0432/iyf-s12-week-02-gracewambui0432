@@ -789,3 +789,147 @@ header {
     }
 }
 
+
+/* BUTTON HOVER EFFECTS */
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* LINK HOVER EFFECTS */
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* PROJECT CARD HOVER EFFECTS */
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* SMOOTH TRANSITIONS */
+
+.button,
+.card,
+a,
+input,
+textarea {
+    transition: all 0.3s ease;
+}
+
+/* ACCESSIBILITY FOCUS STATES */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* FORM FOCUS EFFECTS */
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* RESPONSIVE IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* PROJECT IMAGES */
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* DESIGN VARIABLES */
+
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #333333;
+    --color-background: #f8f9fa;
+    --color-white: #ffffff;
+
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+
+    --border-radius: 10px;
+}
+
+/* CONSISTENT SECTION SPACING */
+
+section {
+    padding: var(--spacing-large) 0;
+}
+
+/* CONSISTENT HEADINGS */
+
+h1, h2, h3 {
+    margin-bottom: var(--spacing-medium);
+}
+
+/* CONSISTENT PARAGRAPHS */
+
+p {
+    margin-bottom: var(--spacing-small);
+}
+
+/* PREVENT HORIZONTAL SCROLL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
