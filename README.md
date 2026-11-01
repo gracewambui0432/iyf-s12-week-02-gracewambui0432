@@ -8,7 +8,7 @@
 ## Live Demo
 My personal Week 2 CSS Webpage: [View Live Website](https://gracewambui0432.github.io/iyf-s12-week-02-gracewambui0432/)
 
-My personal Week 1 HTML Webpage: [View Live Website](https://gracewambui0432.github.io/iyf-s12-week-01-gracewambui0432/)
+My personal Week 1 HTML Webpage: [View Live Website](https://gracewambui0432.github.io/Iyf-s12-week-01-gracewambui0432/)
 
 ## Project Description
 This project is a personal portfolio website created to practice styling web pages with CSS. It introduces my background, interests, and web development journey while demonstrating how a website can adapt to different screen sizes.
