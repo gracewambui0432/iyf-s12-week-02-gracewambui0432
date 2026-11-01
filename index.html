@@ -1,65 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grace Wambui - Home</title>
+
+    <meta name="description" content="Grace Wambui's portfolio — an aspiring web developer building accessible and user-friendly websites.">
+    <title>Grace Wambui | Home</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header class="navbar">
-    <div class="nav-logo">Grace Wambui</div>
-    
-    <!-- Hamburger - CSS only -->
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-hamburger">☰</label>
+    <header class="site-header">
+        <a class="logo" href="index.html">Grace Wambui</a>
 
-    <ul class="nav-links">
-        <li><a href="index.html" class="active">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="box-model-practice.html">BOX MODEL</a></li>
-    </ul>
-</header>
+        <!-- CSS-only responsive navigation -->
+        <input
+            type="checkbox"
+            id="nav-toggle"
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+        >
+        <label for="nav-toggle" class="nav-hamburger" aria-hidden="true">☰</label>
 
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
 
     <main>
+        <!-- Hero -->
         <section class="hero">
-            <h1>Hi, I'm Grace Wambui</h1>
-            <p>Aspiring Web Developer at IYF - Building accessible web experiences</p>
-            <figure>
-                <img src="https://placehold.co/300x300" alt="Portrait photo of Claire Wairimu, web developer">
+            <div class="hero-content">
+                <p class="eyebrow">Aspiring Web Developer · IYF Weekend Academy</p>
+                <h1>Hi, I'm <span>Grace Wambui</span></h1>
+                <p>
+                    I’m learning to build accessible, responsive, and user-friendly
+                    web experiences with HTML and CSS.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn" href="projects.html">View My Work</a>
+                    <a class="btn btn-secondary" href="about.html">Learn About Me</a>
+                </div>
+            </div>
+
+            <figure class="hero-image">
+                <img
+                    src="https://placehold.co/300x300?text=My+Profile+Photo"
+                    alt="Placeholder for Grace Wambui's profile photo"
+                    width="300"
+                    height="300"
+                >
                 <figcaption>My Profile Photo</figcaption>
             </figure>
-            <p><a href="projects.html">View My Work</a></p>
-            <p><a href="about.html">Learn More About Me</a></p>
         </section>
 
-        <section>
-            <h2>Introduction</h2>
-            <p>I am a student at IYF Weekend Academy. I love building websites that are semantic, accessible and easy to use for everyone including screen reader users.</p>
-            <p>My favorite learning resource is <a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a>.</p>
+        <!-- Introduction -->
+        <section class="intro-section">
+            <div class="container">
+                <h2>Welcome to My Portfolio</h2>
+                <p>
+                    I am a student at IYF Weekend Academy. I enjoy creating websites
+                    that are semantic, accessible, and easy to use—including for
+                    people who use screen readers.
+                </p>
+                <p>
+                    My favorite learning resource is
+                    <a href="https://developer.mozilla.org/"
+                       target="_blank"
+                       rel="noopener noreferrer">MDN Web Docs</a>.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h2>My Hobbies & Interests</h2>
-            <ul>
-                <li>Coding and exploring new JavaScript features</li>
-                <li>Reading tech articles and documentation</li>
-                <li>Community service and mentoring beginners</li>
-            </ul>
+        <!-- Interests -->
+        <section class="interests-section">
+            <div class="container">
+                <h2>My Hobbies &amp; Interests</h2>
+
+                <div class="interests-grid">
+                    <article class="interest-card">
+                        <h3>Coding</h3>
+                        <p>Exploring web technologies and learning new skills.</p>
+                    </article>
+
+                    <article class="interest-card">
+                        <h3>Reading</h3>
+                        <p>Reading technology articles and developer documentation.</p>
+                    </article>
+
+                    <article class="interest-card">
+                        <h3>Community</h3>
+                        <p>Taking part in community service and mentoring beginners.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email me: <a href="mailto:Gracewambui0432@gmail.com">Gracewambui0432@gmail.com</a></p>
+        <!-- Contact call to action -->
+        <section class="contact-section">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <p>Have a question or want to talk about a project? Get in touch.</p>
+                <a class="btn" href="mailto:Gracewambui0432@gmail.com">
+                    Email Me
+                </a>
+            </div>
         </section>
     </main>
 
-    <footer style="background:#1e293b; color:white; padding:25px 20px; text-align:center; margin-top:40px;">
-  <p style="color:white; margin:0; font-size:16px;">&copy; Grace Wambui</p>
-  <p style="color:white; margin:0; font-size:16px;">Location: Nairobi, Kenya - Timezone: EAT (GMT+3)</p>
-</footer>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; <span id="year">2026</span> Grace Wambui</p>
+            <p>Nairobi, Kenya | East Africa Time (EAT, UTC+3)</p>
+            <a href="mailto:Gracewambui0432@gmail.com">Gracewambui0432@gmail.com</a>
+        </div>
+    </footer>
 </body>
 </html>
