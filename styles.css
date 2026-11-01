@@ -428,3 +428,122 @@ small,
         flex-direction: column;
     }
 }
+
+
+/* LESSON 4 - TASK 4.2: CSS GRID */
+
+/* Exercise 1: Photo Gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Exercise 2: Magazine Layout */
+.magazine-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.magazine-header {
+    grid-column: 1 / 3;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.magazine-sidebar {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    background-color: var(--color-primary-light);
+    padding: 20px;
+}
+
+.magazine-content {
+    grid-column: 2;
+    background-color: white;
+    border: 1px solid var(--color-muted);
+    padding: 20px;
+}
+
+.magazine-footer {
+    grid-column: 1 / 3;
+    background-color: var(--color-primary-dark);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Exercise 3: Responsive Project Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid var(--color-muted);
+    border-radius: 8px;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.grid-card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.grid-card p {
+    flex-grow: 1;
+}
+
+/* Tablet: Two columns */
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: One column */
+@media (max-width: 600px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .magazine-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .magazine-header,
+    .magazine-sidebar,
+    .magazine-content,
+    .magazine-footer {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
