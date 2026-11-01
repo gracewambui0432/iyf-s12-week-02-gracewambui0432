@@ -61,3 +61,64 @@ h6 {
     color: #555555;
 }
 
+
+/* TASK 3.2: BOX MODEL PRACTICE */
+
+/* Exercise 1: Box Model Visualization */
+.box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 5px solid blue;
+    margin: 20px;
+    width: 200px;
+}
+
+.box-content {
+    background-color: lightyellow;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Exercise 2: Fix the Box Width */
+.broken-box {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    margin-bottom: 20px;
+}
+
+/* Exercise 3: Card Component */
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
