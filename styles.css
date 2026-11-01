@@ -1321,3 +1321,35 @@ body {
         padding: 2rem 0;
     }
 }
+
+/* Make navigation links visible on all pages */
+.main-nav .nav-links a,
+.nav-links a {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.main-nav .nav-links a:hover,
+.main-nav .nav-links a:focus-visible {
+    color: #fef08a;
+    text-decoration: underline;
+}
+
+/* Keep the navigation background blue */
+.site-header,
+.navbar {
+    background-color: #2563eb;
+}
+
+/* Make page headings clear */
+.page-hero h1 {
+    color: #ffffff;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.page-hero p {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
