@@ -1369,3 +1369,502 @@ body {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+
+/* =================================
+   GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+footer:not(.main-footer) {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* =================================
+   DAY 1 - BUTTON STYLES
+================================= */
+
+.button-section {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.button-section h2 {
+    margin-bottom: 30px;
+    color: #243b55;
+}
+
+.btn {
+    padding: 13px 25px;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Primary Button */
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* Secondary Button */
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.btn-secondary:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Danger Button */
+
+.btn-danger {
+    background-color: #dc2626;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #991b1b;
+}
+
+/* Disabled Button */
+
+.btn-disabled {
+    background-color: #d1d5db;
+    color: #777;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.btn-disabled:hover {
+    background-color: #d1d5db;
+    transform: none;
+}
+
+
+/* =================================
+   DAY 2 - CARD COMPONENT
+================================= */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h2 {
+    color: #243b55;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    margin-bottom: 18px;
+    color: #666;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    background-color: #e0ecff;
+    color: #2563eb;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.card-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   DAY 3 - HERO SECTION
+================================= */
+
+.hero-section {
+    min-height: 100vh;
+    background-image: url("https://picsum.photos/id/1018/1920/1080");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 750px;
+}
+
+.hero-content h1 {
+    font-size: clamp(35px, 6vw, 65px);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: clamp(16px, 2vw, 21px);
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+
+/* =================================
+   DAY 4 - CONTACT FORM
+================================= */
+
+.form-container {
+    background-color: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    color: #243b55;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus State */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37,99,235,0.3);
+}
+
+/* Invalid State */
+
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc2626;
+    background-color: #fff5f5;
+}
+
+/* Valid State */
+
+.form-group input:valid:not(:placeholder-shown),
+.form-group textarea:valid:not(:placeholder-shown) {
+    border-color: #16a34a;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =================================
+   DAY 5 - FOOTER DESIGN
+================================= */
+
+.footer-demo {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.main-footer {
+    background-color: #172b46;
+    color: white;
+    padding: 55px 8% 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    padding-bottom: 40px;
+}
+
+.footer-column h2,
+.footer-column h3 {
+    margin-bottom: 18px;
+    color: white;
+}
+
+.footer-column p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-column ul a:hover {
+    color: #60a5fa;
+    padding-left: 5px;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #344b69;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 19px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #2563eb;
+    transform: translateY(-4px);
+}
+
+/* Copyright */
+
+.copyright {
+    border-top: 1px solid #42546b;
+    text-align: center;
+    padding: 22px 10px;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+/* TABLETS */
+
+@media (max-width: 900px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .button-section {
+        padding: 25px 15px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .form-container {
+        padding: 22px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .main-footer {
+        padding: 40px 7% 0;
+    }
+
+}
+
